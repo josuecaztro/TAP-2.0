@@ -1,0 +1,58 @@
+.default-bg {
+ 
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+  }
+  
+  .green-bg {
+    background: linear-gradient(135deg, #1e722a, #3fa34d);
+  }
+  
+  @keyframes flashYellow {
+    0% { background: rgb(228, 228, 1); }
+    50% { background: #dece1e; }
+    100% { background: rgb(228, 228, 1); }
+  }
+  
+  .yellow-flash {
+    animation: flashYellow 0.5s infinite alternate;
+  }
+  
+  @keyframes flashRed {
+    0% { background: rgb(140, 24, 24); }
+    50% { background: #ff4d4d; }
+    100% { background: rgb(140, 24, 24); }
+  }
+  
+  .red-flash {
+    animation: flashRed 0.5s infinite alternate;
+  }
+  
+.clock {
+    height: 100vh;
+    font-size: 20rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    font-family: "Arial", sans-serif;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+
+  }
+  
+  .am-pm {
+    font-size: 5rem; 
+    margin-left: 0.5vw;
+    vertical-align: top;
+    opacity: 0.8; 
+  }
+  
+  @media (max-width: 768px) {
+    .clock {
+      font-size: 15rem;
+    }
+  }
+  
+ 
